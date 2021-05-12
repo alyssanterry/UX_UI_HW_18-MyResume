@@ -1,0 +1,779 @@
+h1 {
+    font-family: 'Bangers', cursive;
+    font-size: 48px;
+    letter-spacing: 2px;
+}
+h2 {
+    font-family: 'Bangers', cursive;
+    font-size: 24px;
+    letter-spacing: 2px;
+}
+h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: #723885;
+}
+h4 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+}
+h5 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+
+.header {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+    background-color: #234078;
+    flex-shrink: 1;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2)
+}
+.nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 50%;
+    background-color: #234078;
+    color: white;
+    flex-shrink: 1;
+    font-family: 'Bangers', cursive;
+    font-size: 24px;
+    letter-spacing: 2px;
+}
+a:link {
+    color: white;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline solid #F2D533;
+    cursor: pointer;
+    color: white;
+}
+a:visited {
+    color: white;
+}
+a.active {
+    color: white;
+}
+.burger {
+    display: none;
+    flex-direction:column;
+}
+.bar {
+    width: 45px;
+    height: 10px;
+    background-color: white;
+    margin: 3px 0;
+    border-radius: 6px;
+}
+.burgerContainer {
+    display: none;
+    color: white;
+}
+.line {
+    width: 100px;
+    height: 5px;
+    background-color: #F2D533;
+    margin: 3px 0;
+    border-radius: 5px;
+}
+.nav li:hover {
+    text-decoration: underline solid #F2D533;
+    cursor: pointer;
+}
+.logoName {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-shrink: 1;
+}
+.logo {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    float: left;
+    padding-left: 30px;
+}
+.name {
+    color: white;
+    padding-left: 30px;
+    font-family: 'Bangers', cursive;
+    font-size: 48px;
+    letter-spacing: 2px;
+}
+
+.myResume {
+    display:flex;
+    flex-direction: column;
+    width: 100%;
+    padding-top: 150px;
+}
+
+.myResumeTitle {
+    display: grid;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+    "pageTitle pageTitle pageTitle"
+    "pdf email linkedin"
+}
+.pageTitle {
+    grid-area: pageTitle;
+    text-align: center;
+    color: #723885;
+}
+.pdf {
+    grid-area: pdf;
+    justify-self: center;
+    padding-left: 100px;
+    display: flex;
+    align-items: center;
+}
+.email {
+    grid-area: email;
+    justify-self: center;
+    display: flex;
+}
+.linkedin {
+    grid-area: linkedin;
+    justify-self: center;
+    padding-right: 100px;
+    display: flex;
+}
+
+.iconPDF:hover {
+    transform: scale(1.2, 1.2);
+    cursor: pointer;
+}
+.iconLinkedin:hover {
+    transform: scale(1.2, 1.2);
+    cursor: pointer;
+}
+.iconEmail:hover {
+    transform: scale(1.2, 1.2);
+    cursor: pointer;
+}
+
+.myResumeBlock1{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+.blockTitle {
+    color: #723885;
+}
+
+.myResumeBlock2 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+.skillsInfographic {
+    display: flex;
+    justify-self: center;
+    width: 1000px;
+    height: 400px;
+    background-color: gray;
+}
+
+.myResumeBlock3 {
+    display: grid;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    grid-template-columns: 380px 380px 380px;
+    grid-template-rows: 150px 550px;
+    grid-template-areas:
+    "blockTitle blockTitle blockTitle"
+    "project1 project2 project3"
+}
+.blockTitle {
+    grid-area: blockTitle;
+    text-align: center;
+    padding-top: 50px;
+}
+.project1 {
+    grid-area: project1;
+}
+.project2 {
+    grid-area: project2;
+}
+.project3 {
+    grid-area: project3;
+}
+.projectImage:hover {
+    cursor: pointer;
+    outline: 5px solid #F2D533;
+    outline-offset: -5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2)
+}
+
+.myResumeBlock4 {
+    display: grid;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    grid-template-columns: 180px 1fr 1fr;
+    grid-template-rows: 150px 160px 1fr;
+    grid-template-areas:
+    "blockTitle blockTitle blockTitle"
+    "parkerLordLogo leftAlign1 rightAlign1"
+    "parikerLordLogo description1 description1"
+}
+.blockTitle {
+    grid-area: blockTitle;
+}
+.parkerLordLogo {
+    grid-area: parkerLordLogo;
+    padding-left: 100px;
+    padding-top: 110px;
+}
+.leftAlign1 {
+    grid-area: leftAlign1;
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-left: 150px;
+    text-align: left;
+    padding-top: 50px;
+    color: #723885;
+    font-weight: 800; 
+    line-height: 14px;
+}
+.rightAlign1 {
+    grid-area: rightAlign1;
+    display:flex;
+    flex-direction: column;
+    text-align: right;
+    padding-right: 100px;
+    padding-top: 50px;
+    color: #723885;
+    font-weight: 800;
+    line-height: 14px;
+}
+.description1 {
+    grid-area: description1;
+    display:flex;
+    flex-direction: column;
+    padding-left: 150px;
+    padding-right: 100px;
+    line-height: 18px;
+    
+}
+.subtitle {
+    color: #723885;
+    font-weight: 800; 
+    line-height: 0px;
+}
+.accomplishments li {
+    list-style-type: disc;
+    list-style-position: inside;
+    text-indent: -1.35em;
+    padding-left: 2em;
+}
+
+
+.GeorgiaTech {
+    display: grid;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 50px;
+    grid-template-columns: 180px 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+    "GT-logo leftAlign2 rightAlign2"
+    "GT-logo GT-description GT-description"
+}
+.GT-logo {
+    grid-area: GT-logo;
+    padding-left: 100px;
+}
+.leftAlign2 {
+    grid-area: leftAlign2;
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-left: 150px;
+    text-align: left;
+    color: #723885;
+    font-weight: 800; 
+}
+.rightAlign2 {
+    grid-area: rightAlign2;
+    display:flex;
+    flex-direction: column;
+    text-align: right;
+    padding-right: 100px;
+    color: #723885;
+    font-weight: 800;
+}
+.GT-description {
+    grid-area: GT-description;
+    padding-left: 150px;
+    padding-right: 100px;
+    line-height: 18px;
+}
+
+.NCSU {
+    display: grid;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 50px;
+    grid-template-columns: 180px 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+    "NCSU-logo leftAlign3 rightAlign3"
+    "NCSU-logo NCSU-description NCSU-description"
+}
+.NCSU-logo {
+    grid-area: NCSU-logo;
+    padding-left: 125px;
+}
+.leftAlign3 {
+    grid-area: leftAlign3;
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-left: 150px;
+    text-align: left;
+    color: #723885;
+    font-weight: 800; 
+}
+.rightAlign3 {
+    grid-area: rightAlign3;
+    display:flex;
+    flex-direction: column;
+    text-align: right;
+    padding-right: 100px;
+    color: #723885;
+    font-weight: 800; 
+}
+.NCSU-description {
+    grid-area: NCSU-description;
+    padding-left: 150px;
+    padding-right: 100px;
+    line-height: 18px;
+}
+
+.pagination {
+    display: grid;
+    width: 100%;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    "paginationLeft paginationRight"
+  }
+.pagination a:link {
+    color: black;
+    text-decoration: none;
+}
+.pagination a:hover {
+    text-decoration: underline solid #F2D533;
+    cursor: pointer;
+    color: black;
+}
+.pagination a:visited {
+    color: black;
+}
+.pagination a.active {
+    color: black;
+}
+.paginationLeft {
+    grid-area: paginationLeft;
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+  }
+.paginationRight {
+    grid-area: paginationRight; 
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 30px;
+  }
+.paginationLeft h2:hover {
+    cursor: pointer;
+    text-decoration: underline solid #F2D533;
+  }
+.paginationRight h2:hover {
+    cursor: pointer;
+    text-decoration: underline solid #F2D533;
+  }
+
+  .footer {
+    display: grid;
+    width: 100%;
+    color: white;
+    background-color: #234078;
+    grid-template-columns: 608px 832px;
+    grid-template-rows: 100x 100px 100px;
+    padding-bottom: 25px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 1;
+    grid-template-areas:
+    "nothing footerTitle"
+    "iconLinkedin descriptionLinkedin"
+    "iconEmail descriptionEmail"
+}
+.nothing {
+    grid-area: nothing;
+}
+.footerTitle {
+    grid-area: footerTitle;
+    justify-self: flex-start;
+    text-decoration: underline solid #F2D533;
+}
+.iconLinkedin {
+    grid-area: iconLinkedin;
+    justify-self: flex-end;
+    padding-right: 10px;
+}
+.descriptionLinkedin {
+    grid-area: descriptionLinkedin;
+    justify-self: flex-start;
+}
+.iconEmail {
+    grid-area: iconEmail;
+    justify-self: flex-end;
+    padding-right: 10px;
+}
+.descriptionEmail {
+    grid-area: descriptionEmail;
+    justify-self: flex-start;
+}
+
+
+@media only screen and (max-width: 1100px){
+    .header {
+        display: flex;
+        align-items: flex-end; 
+        justify-content: space-around;
+        background-color: #234078;
+        flex-shrink: 1;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2)
+    }
+ .logoName {
+    display: flex;
+    align-items: flex-end;
+    }
+    .logo {
+        padding-left: 0px;
+        padding-bottom: 25px;
+        align-items: flex-end; 
+    }
+    .name {
+        font-size: 24px;
+        align-items: center;
+        padding-left: 75px;
+    }
+    .nav {
+        display: none;
+    }
+    .burger {
+        display: flex;
+        justify-content: flex-end;
+        padding-bottom: 25px;
+    }
+
+.myResumeTitle {
+    display: grid;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+    "pageTitle"
+    "pdf" 
+    "email" 
+    "linkedin"
+}
+.pageTitle {
+    grid-area: pageTitle;
+    text-align: center;
+    color: #723885;
+}
+.pdf {
+    grid-area: pdf;
+    justify-self: center;
+    padding-left: 0px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.email {
+    grid-area: email;
+    justify-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.linkedin {
+    grid-area: linkedin;
+    justify-self: center;
+    padding-right: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skillsInfographic {
+    display: flex;
+    justify-self: center;
+    width: 400px;
+    height: 1000px;
+    background-color: gray;
+}
+
+.myResumeBlock3 {
+    display: grid;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: 150px 1fr 1fr 1fr;
+    grid-template-areas:
+    "blockTitle"
+    "project1"
+    "project2"
+    "project3"
+}
+.blockTitle {
+    grid-area: blockTitle;
+    text-align: center;
+    padding-top: 50px;
+}
+.project1 {
+    grid-area: project1;
+    justify-self: center;
+    width: 400px;
+}
+.project2 {
+    grid-area: project2;
+    justify-self: center;
+    width: 400px;
+}
+.project3 {
+    grid-area: project3;
+    justify-self: center;
+    width: 400px;
+}
+
+.myResumeBlock4 {
+    display: grid;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    grid-template-columns: 180px 1fr 1fr;
+    grid-template-rows: 100px 200px 200px 1fr;
+    grid-template-areas:
+    "blockTitle blockTitle blockTitle"
+    "parkerLordLogo leftAlign1 rightAlign1"
+    "description1 description1 description1"
+}
+.blockTitle {
+    grid-area: blockTitle;
+}
+.parkerLordLogo {
+    grid-area: parkerLordLogo;
+    padding-top: 0px;
+    padding-left: 25px;
+    justify-self: flex-start;
+}
+.leftAlign1 {
+    grid-area: leftAlign1;
+    display:flex;
+    flex-direction: column;
+    justify-self: flex-start;
+    align-items: flex-start;
+    text-align: left;
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-left: 50px;
+    color: #723885;
+    font-weight: 800; 
+    line-height: 14px;
+}
+.rightAlign1 {
+    grid-area: rightAlign1;
+    display:flex;
+    flex-direction: column;
+    text-align: right;
+    padding-right: 25px;
+    padding-top: 0px;
+    padding-left: 0px;
+    color: #723885;
+    font-weight: 800;
+    line-height: 14px;
+}
+.description1 {
+    grid-area: description1;
+    display:flex;
+    flex-direction: column;
+    padding-left: 25px;
+    padding-right: 25px;
+    line-height: 18px;
+    padding-top: 100px;
+    
+}
+.subtitle {
+    color: #723885;
+    font-weight: 800; 
+    line-height: 0px;
+}
+
+.myResumeBlock5 {
+    padding-top: 50px;
+}
+
+.GeorgiaTech {
+    display: grid;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 50px;
+    grid-template-columns: 180px 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+    "GT-logo leftAlign2 rightAlign2"
+    "GT-description GT-description GT-description"
+}
+.GT-logo {
+    grid-area: GT-logo;
+    padding-left: 25px;
+}
+.leftAlign2 {
+    grid-area: leftAlign2;
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-left: 50px;
+    text-align: left;
+    color: #723885;
+    font-weight: 800; 
+}
+.rightAlign2 {
+    grid-area: rightAlign2;
+    display:flex;
+    flex-direction: column;
+    text-align: right;
+    padding-right: 25px;
+    color: #723885;
+    font-weight: 800;
+}
+.GT-description {
+    grid-area: GT-description;
+    padding-left: 25px;
+    padding-right: 25px;
+    line-height: 18px;
+}
+
+.NCSU {
+    display: grid;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 50px;
+    grid-template-columns: 180px 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+    "NCSU-logo leftAlign3 rightAlign3"
+    "NCSU-description NCSU-description NCSU-description"
+}
+.NCSU-logo {
+    grid-area: NCSU-logo;
+    padding-left: 60px;
+}
+.leftAlign3 {
+    grid-area: leftAlign3;
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-left: 50px;
+    text-align: left;
+    color: #723885;
+    font-weight: 800; 
+}
+.rightAlign3 {
+    grid-area: rightAlign3;
+    display:flex;
+    flex-direction: column;
+    text-align: right;
+    padding-right: 25px;
+    color: #723885;
+    font-weight: 800; 
+}
+.NCSU-description {
+    grid-area: NCSU-description;
+    padding-left: 25px;
+    padding-right: 25px;
+    line-height: 18px;
+}
+
+.myResumeBlock3 {
+    display: grid;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: 150px 1fr 1fr 1fr;
+    grid-template-areas:
+    "blockTitle"
+    "project1"
+    "project2"
+    "project3"
+}
+.blockTitle {
+    grid-area: blockTitle;
+    text-align: center;
+    padding-top: 50px;
+}
+.project1 {
+    grid-area: project1;
+    justify-self: center;
+    width: 400px;
+}
+.project2 {
+    grid-area: project2;
+    justify-self: center;
+    width: 400px;
+}
+.project3 {
+    grid-area: project3;
+    justify-self: center;
+    width: 400px;
+}
+}
